@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Motorlab — Dört Zamanlı Motor Laboratuvarı',
   description:
     'Benzinli motorun dört zamanlı çevrimini hareketli kesit, deneyler ve canlı grafiklerle keşfet.',
+  icons: { icon: `${process.env.PAGES_BASE_PATH ?? ''}/favicon.svg` },
 };
 export default function RootLayout({
   children,
