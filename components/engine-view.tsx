@@ -442,7 +442,7 @@ export function EngineView({
       {label('outlet', 508, head - 35, 475, head - 62, true)}
       {label('chamber', 505, head + 34, 363, head + 8, true)}
       {label('cylinder', 30, 285, 241, 280)}
-      {label('piston', 515, 332, 393, top + 33, true)}
+      {label('piston', 515, 300, 393, top + 33, true)}
       {label('rod', 30, 409, (330 + crankX) / 2, (pinY + crankY) / 2)}
       {label('crank', 504, 505, 365, 510, true)}
       <text
