@@ -224,9 +224,11 @@ export default function Home() {
       ? 'Piston yukarı çıkmaya başladı; emme supabı geç kapanışını tamamlıyor. Supap kapandıktan sonra karışım sıkışır.'
       : timing && intake && exhaust
         ? 'Çevrim sınırında iki supap kısa bir süre birlikte açık. Bu aralığa supap bindirmesi denir. Gazların ataleti bazı koşullarda silindirin dolmasına yardım eder.'
-        : phaseIndex === 2 && angle < ignitionAngle(params)
-          ? 'Piston ÜÖN’yi geçti ve aşağı inmeye başladı. Geç ateşleme seçildiği için kıvılcım henüz oluşmadı; karışım bir süre yanmadan genleşiyor.'
-          : phase.text;
+        : timing && phaseIndex === 2 && exhaust
+          ? 'Egzoz supabı piston AÖN’ye varmadan açıldı. Basınç hâlâ yüksek olduğu için yanmış gazın büyük kısmı kendiliğinden dışarı boşalır (blowdown). Son genleşme işinin küçük bir kısmı feda edilir; karşılığında egzoz zamanında piston daha düşük basınca karşı çalışır. Basınç grafiği temel 180° zamanlamasını kullanır.'
+          : phaseIndex === 2 && angle < ignitionAngle(params)
+            ? 'Piston ÜÖN’yi geçti ve aşağı inmeye başladı. Geç ateşleme seçildiği için kıvılcım henüz oluşmadı; karışım bir süre yanmadan genleşiyor.'
+            : phase.text;
   return (
     <main className="lab-shell">
       <header className="topbar">
