@@ -100,7 +100,7 @@ export const terms = [
   ],
   [
     'Volümetrik verim',
-    'Silindirin referans koşullara göre ne kadar dolabildiğini anlatır. Burada devre bağlı yaklaşık bir dolum katsayısı kullanılır; emme basıncını gaz kelebeği belirler.',
+    'Silindirin referans koşullara göre ne kadar dolabildiğini anlatır. Gaz kelebeği manifold basıncını belirler. Supap ve kanal kayıpları silindire giren havanın basıncını bunun altına indirir; burada bu etki devre bağlı yaklaşık bir dolum katsayısıyla temsil edilir. Etkin emme basıncı = manifold basıncı × dolum katsayısı olduğundan, silindirde kalan hava kütlesi de aynı oranda azalır.',
   ],
   [
     'Termal verim',
